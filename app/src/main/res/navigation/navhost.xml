@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navhost"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.restaurant.Login.login_fragment"
+        android:label="login_fragment" >
+        <action
+            android:id="@+id/action_login_fragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_login_fragment_to_menjar_fragment"
+            app:destination="@id/menjar_fragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.restaurant.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/beure_fragment"
+        android:name="com.example.restaurant.Beure_fragment"
+        android:label="fragment_beure_fragment"
+        tools:layout="@layout/fragment_beure_fragment" />
+    <fragment
+        android:id="@+id/menjar_fragment"
+        android:name="com.example.restaurant.Comida_fragment"
+        android:label="fragment_menjar_fragment"
+        tools:layout="@layout/menjar_recylceview" />
+    <fragment
+        android:id="@+id/pagar_Fragment"
+        android:name="com.example.restaurant.Pagar_Fragment"
+        android:label="fragment_pagar_"
+        tools:layout="@layout/fragment_pagar_" />
+</navigation>

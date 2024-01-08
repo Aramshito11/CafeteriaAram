@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menjar_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/comida"
+        android:title="Menjar" />
+    <item
+        android:id="@+id/beure_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/bebida"
+        android:title="Beguda" />
+    <item
+        android:id="@+id/pagar_Fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/pagar"
+        android:title="Pagar" />
+</menu>
